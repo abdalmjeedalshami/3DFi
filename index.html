@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- NavBar -->
+      <div class="h-padding">
+        <div class="nav-bar">
+          <div class="leading">
+            <a href="">
+              <div class="logo"><img src="logo.png" alt="logo" /></div>
+            </a>
+            <a href="">
+              <div class="name">3DFi</div>
+            </a>
+            <div class="beta-banner-container">
+              <div class="beta-banner">Beta</div>
+            </div>
+          </div>
+          <div class="menu">
+            <a href="">
+              <div>Home</div>
+            </a>
+            <a href="">
+              <div>Product</div>
+            </a>
+            <a href="">
+              <div>Pricing</div>
+            </a>
+            <a href="">
+              <div>Blog</div>
+            </a>
+            <a href="">
+              <div>Company</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="h-padding">
+        <div class="content">
+          <div class="text">
+            <div class="tags">
+              <a href="">Lightning-fast, low-cost, easy.</a>
+            </div>
+            <h1 style="font-size: 500%">Your AI-Powered 3D Builder</h1>
+            <p>Create stunning 3D assets effortlessly. No coding required.</p>
+            <div class="buttons">
+              <a href="">
+                <div class="btn primary">Start creating 3D</div>
+              </a>
+              <a href="">
+                <div class="btn secondary">Guide</div>
+              </a>
+            </div>
+          </div>
+          <div class="images">
+            <div>No GPU needed</div>
+            <div>Up to 12 images per session</div>
+            <div>Super low-cost (<$0.5/image)</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Swiper -->
+      <div class="h-padding">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/logos/logo (1).png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/logos/logo (2).png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/logos/logo (3).png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/logos/logo (4).png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/logos/logo (5).png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/logos/logo (6).png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/logos/logo (6).png" alt="logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 6,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        spaceBetween: 30,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
